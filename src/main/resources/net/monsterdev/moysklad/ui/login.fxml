@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.monsterdev.moysklad.ui.LoginController">
+   <children>
+      <VBox alignment="CENTER" layoutX="257.0" layoutY="52.0" prefHeight="400.0" prefWidth="230.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="185.0" AnchorPane.rightAnchor="185.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox spacing="5.0">
+               <children>
+                  <Label text="Логин или e-mail" />
+                  <TextField fx:id="edtLogin" prefHeight="25.0" prefWidth="133.0" />
+               </children>
+            </VBox>
+            <VBox spacing="5.0">
+               <children>
+                  <Label text="Пароль" />
+                  <PasswordField fx:id="edtPassword" />
+               </children>
+            </VBox>
+            <Button fx:id="btnConnect" mnemonicParsing="false" onAction="#onConnect" prefHeight="25.0" prefWidth="199.0" text="Подключится">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
